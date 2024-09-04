@@ -1,0 +1,247 @@
+.contianer-servicios {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: -80px;
+}
+
+.title-servicios {
+	text-align: center;
+}
+
+.container-options-servicios {
+	width: 90%;
+	height: auto;
+	display: flex;
+	padding: 20px;
+	gap: 50px;
+	flex-direction: column;
+	background: rgba(105, 13, 197, 0.103);
+	border: 3px solid rgb(255, 255, 255);
+	border-radius: 27px;
+	margin-bottom: 50px;
+	margin: 0 auto;
+}
+
+.container-buttons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 30px;
+}
+
+/* From Uiverse.io by Wendell47 */
+.button-option {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 50px;
+	padding: 15px 30px;
+	border: 0;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10rem;
+	transition: 0.3s;
+	font-size: 19px;
+	font-weight: bold;
+	cursor: pointer;
+	color: rgb(37, 37, 37);
+	z-index: 0;
+	box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+.button-option:hover {
+	transform: scale(1.05);
+}
+
+.button-option:active {
+	transform: scale(0.97);
+}
+
+.hoverEffect {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+
+.hoverEffect div {
+	background: rgb(222, 0, 75);
+	background: linear-gradient(90deg,
+			rgba(222, 0, 75, 1) 0%,
+			rgba(191, 70, 255, 1) 49%,
+			rgba(0, 212, 255, 1) 100%);
+	border-radius: 40rem;
+	width: 250px;
+	height: 180px;
+	transition: 0.4s;
+	filter: blur(20px);
+	animation: effect infinite 8s linear;
+	opacity: 0.5;
+}
+
+.button-option:hover .hoverEffect div {
+	width: 8rem;
+	height: 8rem;
+}
+
+@keyframes effect {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* CONTAINER PRECIOS */
+
+.container-precios {
+	display: flex;
+	width: 93%;
+	flex-direction: column;
+	margin: 0 auto;
+	background: rgba(105, 13, 197, 0.103);
+	border: 3px solid rgb(255, 255, 255);
+	border-radius: 27px;
+	margin-bottom: 50px;
+}
+
+.container-categoria-and-img {
+	width: 98%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px;
+	/* background-color: blue; */
+}
+
+/* From Uiverse.io by Codecite */
+.container-categoria {
+	--fancy-button-gradient-0: #8d49fd;
+	--fancy-button-gradient-50: #7f56f3;
+	--fancy-button-gradient-100: #5691f3;
+	--fancy-button-inner-shadow-top: rgba(233, 209, 255, 0.2);
+	--fancy-button-inner-shadow-top-lg: rgba(9, 12, 60, 0.1);
+	--fancy-button-inner-shadow-bottom: rgba(137, 222, 246, 0.3);
+	--fancy-button-shine-top: #e9d1ff;
+	--fancy-button-shine-bottom: #adfff9;
+	width: 200px;
+	text-align: center;
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 21px;
+	text-shadow: 0px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+	padding: 0;
+	margin: 0;
+	appearance: none;
+	border: none;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	border-radius: 25px;
+	color: #fff;
+	background-image: linear-gradient(to bottom, var(--fancy-button-gradient-0) 0%, var(--fancy-button-gradient-50) 50%, var(--fancy-button-gradient-100) 100%);
+	box-shadow: 0px 4px 12px rgba(9, 12, 60, 0.15), 0px 2px 8px rgba(9, 12, 60, 0.15), 0px 1px 3px var(--fancy-button-inner-shadow-top-lg), inset 0px 1px 1px var(--fancy-button-inner-shadow-top), inset 0px -1px 3px var(--fancy-button-inner-shadow-bottom);
+}
+
+.container-categoria:before,
+.container-categoria:after {
+	content: '';
+	position: absolute;
+	border-radius: inherit;
+	will-change: transform;
+}
+
+.container-categoria:before {
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--fancy-button-shine-top);
+	width: 96px;
+	height: 6px;
+	top: -3px;
+	opacity: 0.6;
+	filter: blur(6px);
+	transition: opacity 0.25s;
+}
+
+.container-categoria:after {
+	inset: 0;
+	background-size: cover;
+	z-index: 2;
+	opacity: 0.3;
+	mix-blend-mode: overlay;
+	pointer-events: none;
+}
+
+.container-categoria span {
+	display: block;
+	padding: 12px 24px;
+	border-radius: inherit;
+	overflow: hidden;
+	position: relative;
+	background-image: linear-gradient(to bottom, var(--fancy-button-shine-top), transparent 8px);
+	background-position: 0 -6px;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.container-categoria span:before,
+.container-categoria span:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	background-color: var(--fancy-button-shine-bottom);
+	transition: opacity 0.25s, transform 0.25s;
+	will-change: transform;
+}
+
+.container-categoria span:before {
+	width: 92px;
+	height: 8px;
+	bottom: -4px;
+	opacity: 0.75;
+	filter: blur(6px);
+}
+
+.container-categoria span:after {
+	width: 112px;
+	height: 1px;
+	bottom: 0;
+	opacity: 0.9;
+	filter: blur(1px);
+}
+
+.container-categoria:hover span:before {
+	opacity: 0.8;
+}
+
+.container-categoria:hover span:before {
+	transform: translateX(-50%) scale(1.25);
+}
+
+.container-categoria:hover span:after {
+	opacity: 1;
+}
+
+.name-categoria {
+	font-size: 23px;
+}
+
+.container-variacion-and-precio {
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
+}
