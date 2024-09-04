@@ -15,7 +15,7 @@ export const Cursos = [
   },
 ];
 
-export const Peinados = []
+export const Peinados = [];
 
 export const Depilacion = [
   {
@@ -287,6 +287,7 @@ export const Uñas = [
     variacion: "Semi con nivelación",
     precio: 11000,
     aclaraciones: "",
+    aclaraciones1: "Esto incluye esmaltado semipermanente con dos decoraciones por mano. Por decoración adicional y encapsulados mandar imagen de referencia para cotizar.",
   },
   {
     categoria: "Uñas",
@@ -335,7 +336,7 @@ export const Uñas = [
     imagen: "/logo/logo-beauty-studio.jpg",
     variacion: "Esculpidas Número 4",
     precio: 17500,
-	aclaraciones: "",
+    aclaraciones: "",
   },
 ];
 
@@ -481,28 +482,28 @@ export const Pestañas = [
 ];
 
 export const Cejas = [
-	{
-	  categoria: "Cejas",
-	  imagen: "/logo/logo-beauty-studio.jpg",
-	  variacion: "Perfilado",
-	  precio: 5000,
-	  aclaraciones: "",
-	},
-	{
-	  categoria: "Cejas",
-	  imagen: "/logo/logo-beauty-studio.jpg",
-	  variacion: "Laminado",
-	  precio: 8000,
-	  aclaraciones: "",
-	},
-	{
-	  categoria: "Cejas",
-	  imagen: "/logo/logo-beauty-studio.jpg",
-	  variacion: "Perfilado + Laminado",
-	  precio: 10500,
-	  aclaraciones: "Todo esto incluye diseño de cejas",
-	},
-  ];
+  {
+    categoria: "Cejas",
+    imagen: "/logo/logo-beauty-studio.jpg",
+    variacion: "Perfilado",
+    precio: 5000,
+    aclaraciones: "",
+  },
+  {
+    categoria: "Cejas",
+    imagen: "/logo/logo-beauty-studio.jpg",
+    variacion: "Laminado",
+    precio: 8000,
+    aclaraciones: "",
+  },
+  {
+    categoria: "Cejas",
+    imagen: "/logo/logo-beauty-studio.jpg",
+    variacion: "Perfilado + Laminado",
+    precio: 10500,
+    aclaraciones: "Todo esto incluye diseño de cejas",
+  },
+];
 
 export const Alisados = [
   {
@@ -510,7 +511,7 @@ export const Alisados = [
     imagen: "/logo/logo-beauty-studio.jpg",
     variacion: "Hombros",
     precio: 14000,
-    aclaraciones: "aclaracion",
+    aclaraciones: "",
   },
   {
     categoria: "Alisado Progresivo",
@@ -535,15 +536,14 @@ export const Alisados = [
   },
 ];
 
-
-
 export const Masajes = [
   {
     categoria: "Masajes",
     imagen: "/logo/logo-beauty-studio.jpg",
     variacion: "Relajante. SHIT~SU/TAILANDES",
     precio: 16000,
-    aclaraciones: "Son movimientos leves para que el cuerpo libere aire, los huesos suenen y genere relajación",
+    aclaraciones:
+      "Son movimientos leves para que el cuerpo libere aire, los huesos suenen y genere relajación",
   },
   {
     categoria: "Masajes",
@@ -564,20 +564,23 @@ export const Masajes = [
     imagen: "/logo/logo-beauty-studio.jpg",
     variacion: "Localizados. Descontracturante",
     precio: 15000,
-    aclaraciones: "Se basa en realizar presiones en los musculos para soltar las contracturas",
+    aclaraciones:
+      "Se basa en realizar presiones en los musculos para soltar las contracturas",
   },
   {
-    categoria: "Masajes",
+    categoria: "Masjes",
     imagen: "/logo/logo-beauty-studio.jpg",
     variacion: "Localizados. Drenaje Linfatico",
     precio: 17000,
-    aclaraciones: "Se basa en la expulsión de líquido que se almacena en el cuerpo, se presiona en los ganglios localizados",
+    aclaraciones:
+      "Se basa en la expulsión de líquido que se almacena en el cuerpo, se presiona en los ganglios localizados",
   },
   {
     categoria: "Masajes",
     imagen: "/logo/logo-beauty-studio.jpg",
-    variacion: "Localizados. Estético Reductor",
+    variacion:
+      "Localizados. Estético Reductor",
     precio: 16000,
-    aclaraciones: "Se basa en reducir el tejido adiposo (la grasa) de piernas, glúteos, brazos y abdomen con vendas frías, también se utilizan distintas cremas y geles",
+    aclaraciones: "Se basa en reducir el tejido adiposo (la grasa) de piernas, glúteos, brazos y abdomen con vendas frías,se utilizan cremas y geles",
   },
 ];

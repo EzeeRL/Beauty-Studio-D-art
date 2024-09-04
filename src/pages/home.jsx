@@ -14,6 +14,8 @@ import {
 import SliderCarousel from "../components/slider";
 import Opciones from "../components/opciones";
 import { useEffect, useState } from "react";
+import WhatsAppButton from "../components/wspButon";
+import FooterContact from "../components/foter";
 
 function Home() {
   const [opciones, setOpciones] = useState("");
@@ -57,8 +59,10 @@ function Home() {
       <h1 className="title-home" id="inicio">Beauty Studio D'art</h1>
       <img src="/logo/logo-beauty-studio.jpg" alt="" className="logo-home" />
       <SliderCarousel></SliderCarousel>
+      <WhatsAppButton></WhatsAppButton>
       <Opciones setOpciones={setOpciones}></Opciones>
       <Servicios servicios={servicios}></Servicios>
+      <FooterContact></FooterContact>
     </div>
   );
 }

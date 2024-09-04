@@ -8,6 +8,7 @@ function Opciones({ setOpciones }) {
         Servicios
       </h1>
       <div className="container-options-servicios">
+        <h3 className="txt-info">Seleccione algún servicio para ver su lista de precios</h3>
         <div className="container-buttons">
           {/* <button
             className="button-option"

@@ -22,3 +22,20 @@
 	opacity: 0.4;
 }
 
+@media screen and (max-width: 1192px) {
+	.slider-home {
+		margin-top: 210px;
+	}
+}
+
+@media screen and (max-width: 841px) {
+	.slider-home {
+		margin-top: 230px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.slider-home {
+		margin-top: 130px;
+	}
+}

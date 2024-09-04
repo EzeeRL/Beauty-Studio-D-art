@@ -27,6 +27,8 @@
 .container-buttons {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 50px;
 	align-items: center;
 	margin-top: 30px;
 }
@@ -134,15 +136,16 @@
 	--fancy-button-inner-shadow-bottom: rgba(137, 222, 246, 0.3);
 	--fancy-button-shine-top: #e9d1ff;
 	--fancy-button-shine-bottom: #adfff9;
-	width: 200px;
+	width: auto;
+	max-width: 200px;
 	text-align: center;
 	font-family: 'Poppins';
 	font-weight: 500;
-	font-size: 20px;
-	line-height: 21px;
+	font-size: 15px;
+	line-height: 35px;
 	text-shadow: 0px 0.5px 0.5px rgba(0, 0, 0, 0.2);
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 10px;
 	appearance: none;
 	border: none;
 	outline: none;
@@ -153,6 +156,22 @@
 	color: #fff;
 	background-image: linear-gradient(to bottom, var(--fancy-button-gradient-0) 0%, var(--fancy-button-gradient-50) 50%, var(--fancy-button-gradient-100) 100%);
 	box-shadow: 0px 4px 12px rgba(9, 12, 60, 0.15), 0px 2px 8px rgba(9, 12, 60, 0.15), 0px 1px 3px var(--fancy-button-inner-shadow-top-lg), inset 0px 1px 1px var(--fancy-button-inner-shadow-top), inset 0px -1px 3px var(--fancy-button-inner-shadow-bottom);
+}
+
+hr {
+	height: 3px;
+	color: #000;
+	border: none;
+	background-color: #fff;
+	border-radius: 30px;
+}
+
+.hr-resto {
+	height: 3px;
+	color: #000;
+	border: none;
+	background-color: #fff;
+	border-radius: 30px;
 }
 
 .container-categoria:before,
@@ -236,6 +255,10 @@
 	opacity: 1;
 }
 
+.container-variacion {
+	font-size: 22px;
+}
+
 .name-categoria {
 	font-size: 23px;
 }
@@ -244,4 +267,24 @@
 	display: flex;
 	justify-content: space-around;
 	font-size: 20px;
+	gap: 10px;
+}
+
+.variacion{
+	font-size: 17px;
+}
+
+.precio {
+	margin-right: 10px;
+}
+
+.container-aclaraciones-masajes {
+	width: 70%;
+	font-size: 18px;
+	text-align: left;
+}
+
+.txt-info {
+	font-size: 22px;
+	text-align: center;
 }

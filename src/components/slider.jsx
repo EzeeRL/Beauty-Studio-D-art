@@ -49,13 +49,31 @@ function SliderCarousel() {
         <img src="/slider/img-1.jpg" alt="Slide 1" className="slider-image" />
       </div>
       <div className="container-img-slider">
-        <img src="/slider/img-2.jpg" alt="Slide 2" className="slider-image" />
+        <img src="/slider/uñas.jpg" alt="Slide 2" className="slider-image" />
       </div>
       <div className="container-img-slider">
-        <img src="/slider/img-3.jpg" alt="Slide 3" className="slider-image" />
+        <img src="/slider/uñas2.jpg" alt="Slide 3" className="slider-image" />
       </div>
       <div className="container-img-slider">
         <img src="/slider/img-4.jpg" alt="Slide 4" className="slider-image" />
+      </div>
+      <div className="container-img-slider">
+        <img src="/slider/uñas3.jpg" alt="Slide 4" className="slider-image" />
+      </div>
+      <div className="container-img-slider">
+        <img src="/slider/uñas4.jpg" alt="Slide 4" className="slider-image" />
+      </div>
+      <div className="container-img-slider">
+        <img src="/slider/uñas5.jpg" alt="Slide 4" className="slider-image" />
+      </div>
+      <div className="container-img-slider">
+        <img src="/slider/uñas6.jpg" alt="Slide 4" className="slider-image" />
+      </div>
+      <div className="container-img-slider">
+        <img src="/slider/uñas7.jpg" alt="Slide 4" className="slider-image" />
+      </div>
+      <div className="container-img-slider">
+        <img src="/slider/uñas8.jpg" alt="Slide 4" className="slider-image" />
       </div>
     </Slider>
   );

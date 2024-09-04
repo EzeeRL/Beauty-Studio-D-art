@@ -3,16 +3,20 @@ nav {
 	position: fixed;
 	top: 0px;
 	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	/* Alinea verticalmente los elementos */
 	border-bottom: 2px solid #ff00ee;
 	background-color: #fff;
 	z-index: 10000;
+	padding: 10px 20px;
+	flex-wrap: wrap;
+	/* Permite que los elementos se acomoden en una nueva línea en pantallas pequeñas */
 }
 
 .container-logo-and-title {
-	width: 30%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	gap: 10px;
 }
 
@@ -29,10 +33,109 @@ nav {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.menu-toggle {
+	display: none;
+	font-size: 24px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
 .container-links {
-	width: 70%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	/* background-color: red; */
+	flex-direction: column;
+	/* Cambia la dirección de los links a una columna para pantallas pequeñas */
+	width: 100%;
+	/* Asegura que ocupe el ancho completo */
+}
+
+.container-links a {
+	padding: 10px;
+	text-decoration: none;
+	color: #000;
+}
+
+@media (min-width: 768px) {
+	.container-logo-and-title {
+		width: 30%;
+	}
+
+	.container-links {
+		width: 70%;
+		flex-direction: row;
+		/* En pantallas grandes, los links están en fila */
+	}
+}
+
+@media (max-width: 767px) {
+	nav {
+		flex-direction: row;
+		justify-content: space-between;
+		/* Cambia la dirección a columna en pantallas pequeñas */
+		/* align-items: flex-start; */
+	}
+
+	.container-button-menu {
+		/* background-color: red; */
+		margin-right: 30px;
+	}
+
+	.menu-toggle {
+		display: block;
+	}
+
+	.container-links {
+		align-items: flex-start;
+		padding: 0 20px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease-in-out;
+		margin-left: -35px;
+	}
+
+	.container-links.open {
+		max-height: 200px;
+		margin-left: -35px;
+	}
+
+	.container-links a {
+		width: 100%;
+		text-align: left;
+		padding: 10px 0;
+		border-bottom: 1px solid #ff00ee;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.title {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.title {
+		font-size: 17px;
+	}
+
+	.logo {
+		width: 60px;
+	}
+}
+
+@media screen and (max-width: 310px) {
+	.logo {
+		width: 50px;
+	}
+
+	.title {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 275px) {
+	.logo {
+		display: none;
+	}
 }

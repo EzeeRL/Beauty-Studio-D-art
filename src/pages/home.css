@@ -24,3 +24,70 @@
 	border-radius: 100%;
 	z-index: 1000;
 }
+
+@media screen and (max-width: 1191px) {
+	.logo-home {
+		top: 220px;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.logo-home {
+		top: 240px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.logo-home {
+		top: 140px;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.logo-home {
+		width: 90px;
+		right: 40px;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.logo-home {
+		width: 70px;
+	}
+
+	.title-home {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.logo-home {
+		width: 50px;
+	}
+
+	.title-home {
+		font-size: 21px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.logo-home {
+		display: none;
+	}
+	
+	.title-home {
+		left: 0px;
+	}
+}
+
+@media screen and (max-width: 290px) {
+	.title-home {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 255px) {
+	.title-home {
+		display: none;
+	}
+}
